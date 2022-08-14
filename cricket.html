@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cricket</title>
+</head>
+<style>
+    .field {
+        width: auto;
+        height: 300px;
+        background-color: green;
+        border: 2px solid skyblue;
+    }
+
+    img {
+        display: block;
+        width: 200px;
+        height: 200px;
+        transition: transform 0.2s ease-out;
+    }
+
+    .field:hover img {
+        transform: rotate(-50deg) translate(0px, 20px);
+        transform-origin: left center;
+    }
+
+    .bat {
+        float: right;
+        padding-top: 40px;
+    }
+
+    .ball {
+        width: 40px;
+        height: 40px;
+        background-color: red;
+        border: 5px solid black;
+        border-radius: 25px;
+        position: relative;
+        top: 70px;
+        left: 1320px;
+        transition: transform 0.3s 0.5s ease-in;
+    }
+
+    .field:hover .ball {
+        transform: translate(-1300px);
+    }
+</style>
+
+<body>
+    <div class="field">
+        <div class="ball">
+
+        </div>
+        <div class="bat">
+            <img src="racket.png" alt="racket image">
+        </div>
+    </div>
+</body>
+
+</html>
